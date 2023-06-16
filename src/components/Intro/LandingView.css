@@ -80,7 +80,7 @@
 
 @media (max-width: 650px) {
   .landing__view {
-    height: 80vh;
+    /* height: 80vh; */
     background-size: contain;
     background-position: center;
   }
