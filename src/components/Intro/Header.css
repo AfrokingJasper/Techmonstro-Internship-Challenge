@@ -78,6 +78,7 @@ nav {
     margin: 0 auto;
     background-color: white;
     border-radius: 2rem;
+    z-index: 15;
   }
 
   .nav__list-mobile {
