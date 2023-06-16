@@ -6,13 +6,15 @@ function About() {
     <div id="about" className="about">
       <div className="about__container">
         <h1>About Chess</h1>
+
+        {/* about image and content */}
         <div className="about__content">
           <img
             className="about__image"
             src={chessImg}
             alt="two people playing chess"
           />
-          <p>
+          <p className="about__paragraph">
             Chess is a timeless and intellectually stimulating board game played
             on a square board. It involves strategic thinking, critical
             analysis, and foresight to checkmate the opponent's king. With

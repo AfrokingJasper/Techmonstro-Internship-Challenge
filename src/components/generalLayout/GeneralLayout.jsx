@@ -1,12 +1,10 @@
 import { Fragment } from "react";
-import LandingView from "../Intro/LandingView";
-import About from "../Intro/About";
+import Intro from "../Intro/Intro";
 
 function GeneralLayout() {
   return (
     <Fragment>
-      <LandingView />
-      <About />
+      <Intro />
     </Fragment>
   );
 }
