@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import LandingView from "./components/Intro/LandingView";
 import RootLayout from "./components/Root";
+import About from "./components/Intro/About";
+import GeneralLayout from "./components/generalLayout/GeneralLayout";
 
 const router = createBrowserRouter([
   {
@@ -9,7 +10,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <LandingView />,
+        element: <GeneralLayout />,
       },
     ],
   },
