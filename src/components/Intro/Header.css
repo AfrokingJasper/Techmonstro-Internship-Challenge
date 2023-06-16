@@ -54,13 +54,11 @@ nav {
 
 @media (max-width: 650px) {
   .header {
-    background-color: black;
     padding: 0 3rem;
   }
 
   .logo {
     font-size: 1.5rem;
-    color: white;
   }
 
   .navs {

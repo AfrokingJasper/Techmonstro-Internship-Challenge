@@ -5,7 +5,6 @@
   padding: 0 5rem;
   justify-content: center;
   padding: 0 1rem;
-  color: black;
 }
 
 .about__container {
@@ -24,11 +23,7 @@
   align-items: center;
 }
 .about__image {
-  width: 25rem;
-}
-
-.about__paragraph {
-  font-size: 1.2rem;
+  width: 20rem;
 }
 
 /* media query for tablets */
@@ -50,7 +45,7 @@
   }
 }
 
-/* media query for mobile screen */
+/* media query for mobile */
 @media (max-width: 650px) {
   .about__container {
     margin-top: 5rem;
@@ -63,9 +58,5 @@
     gap: 2rem;
     align-items: center;
     text-align: center;
-  }
-
-  .about__paragraph {
-    font-size: 1rem;
   }
 }
