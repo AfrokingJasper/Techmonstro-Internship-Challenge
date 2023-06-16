@@ -1,0 +1,96 @@
+/* styling the landing image and background */
+.landing__view {
+  position: relative;
+  height: 90vh;
+  background-image: url(../../assets/landing-image.jpg);
+  /* linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+/* adding an overlay to the background image */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* styling the content container, title and buttons */
+.landing__view-content {
+  z-index: 15;
+  width: 60%;
+  text-align: center;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing__title {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+.buttons__container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.buttons__container a {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttons__container a:hover {
+  background-color: gray;
+  color: white;
+}
+
+@media (max-width: 950px) {
+  .landing__view {
+    background-size: contain;
+    background-position: center;
+  }
+
+  .landing__view-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  .landing__view {
+    height: 80vh;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .landing__view-content {
+    width: 80%;
+  }
+
+  .landing__title {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+}

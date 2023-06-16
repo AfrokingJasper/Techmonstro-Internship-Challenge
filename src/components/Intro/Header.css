@@ -1,0 +1,99 @@
+/* general header styling */
+.header {
+  background-color: white;
+  color: black;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* styling the navigation in the right area */
+.navs {
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+/* styling each link in the nav-list */
+.nav__list a {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+.nav__list a:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.3s;
+}
+
+.active__nav {
+  color: white;
+  background-color: black;
+  transition: all 0.3s;
+}
+
+/*hidding mobile navigations on large screens*/
+nav {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 0 3rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .navs {
+    display: none;
+  }
+
+  /* mobile navigations */
+  nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 1rem;
+    padding: 1rem 0.5rem;
+    width: 70%;
+    left: 1rem;
+    right: 1rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 2rem;
+  }
+
+  .nav__list-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+
+  .nav__list-mobile a {
+    padding: 0.3rem 0.5rem;
+    border-radius: 1.5rem;
+  }
+  .nav__list-mobile a:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.3s;
+  }
+}
