@@ -50,7 +50,7 @@
   .single__image-view img {
     width: 90%;
     height: 20rem;
-    object-fit: center;
+    object-fit: cover;
   }
 
   .about__item {
