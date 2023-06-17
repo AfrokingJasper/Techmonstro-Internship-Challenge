@@ -3,7 +3,6 @@
   position: relative;
   height: 90vh;
   background-image: url(../../assets/landing-image.jpg);
-  /* linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -67,6 +66,7 @@
   color: white;
 }
 
+/* setting media queries for tablets */
 @media (max-width: 950px) {
   .landing__view {
     background-size: contain;
@@ -78,6 +78,7 @@
   }
 }
 
+/* setting mdeia queries for mobile screens */
 @media (max-width: 650px) {
   .landing__view {
     height: 80vh;

@@ -1,9 +1,11 @@
+/* styling the gallery section */
 .gallery__section {
   display: flex;
   text-align: center;
   padding: 0 2rem;
 }
 
+/* stylng the gallery content including the images and also setting an overlay on each image when it is hovered upon */
 .gallery__content {
   margin: 5rem 0;
   display: flex;
@@ -28,6 +30,7 @@
   position: relative;
 }
 
+/* setting the gallery image overlay to hidden */
 .gallery__overlay {
   visibility: hidden;
   height: 0%;
@@ -36,6 +39,7 @@
   height: 0%;
 }
 
+/* making the gallery overlay visible on hover of the parent container */
 .gallery__image-container:hover > .gallery__overlay {
   visibility: visible;
   font-size: 1rem;
@@ -49,20 +53,21 @@
   width: 100%;
   height: 100%;
   transition: all 0.5s;
+  color: white;
 }
 
+/* setting media queries for tablets */
 @media (max-width: 950px) {
   .gallery__grid {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 }
+
+/* setting media queries for mobile */
 @media (max-width: 650px) {
   .gallery__grid {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
 
   .gallery__grid img {

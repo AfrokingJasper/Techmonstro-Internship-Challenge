@@ -8,9 +8,13 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       {
-        index: true,
+        path: "/",
         element: <GeneralLayout />,
       },
+      // {
+      //   path: "galleryitem",
+      //   element: <GalleryItem />,
+      // },
     ],
   },
 ]);
