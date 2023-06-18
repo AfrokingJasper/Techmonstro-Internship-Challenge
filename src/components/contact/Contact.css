@@ -47,6 +47,10 @@
   color: white;
 }
 
+.contact__link {
+  text-decoration: underline;
+}
+
 /* setting media queries for tabletrs */
 @media (max-width: 950px) {
   .contact__content {
@@ -77,12 +81,3 @@
     width: 100%;
   }
 }
-/* @media (max-width: 281px) {
-  .contact__section {
-    padding: 1rem 0;
-  }
-
-  .contact__content-left li {
-    padding: 0rem;
-  }
-} */

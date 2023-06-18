@@ -11,10 +11,6 @@ const router = createBrowserRouter([
         path: "/",
         element: <GeneralLayout />,
       },
-      // {
-      //   path: "galleryitem",
-      //   element: <GalleryItem />,
-      // },
     ],
   },
 ]);

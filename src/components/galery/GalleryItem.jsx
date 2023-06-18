@@ -9,7 +9,7 @@ import "./GalleryItem.css";
 // it contains the details of the exact item that was clicked in the GallrtyItems section
 // that item was passed down to the parent container and then transfered to this container as a prop
 
-function GalleryItem({ onHideView, item, back }) {
+function GalleryItem({ onHideView, item }) {
   return (
     <article className="gallery__item-container">
       <div className="single__image-view">

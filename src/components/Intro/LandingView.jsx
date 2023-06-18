@@ -3,6 +3,10 @@ import { BsFillMoonFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
 
 function LandingView({ onblack, onwhite }) {
+  // the destructured onblack and onwhite props was originally gotten from the generallayout
+  // it was then passed to the intro section and passed down to LandingView section
+  // its funtion is to change the theme of the webpage to from black to white and vise versa
+
   return (
     <section id="landing" className="landing__view">
       <div className=" overlay"></div>
