@@ -15,6 +15,7 @@ function GeneralLayout() {
     const about = document.querySelector(".about");
     const aboutParagraph = document.querySelector(".about__paragraph");
     const input = document.querySelectorAll("input");
+    const textarea = document.querySelector("textarea");
 
     // Changing the styles
     body.style.backgroundColor = "white"; // change to the desired background color
@@ -24,6 +25,7 @@ function GeneralLayout() {
     about.style.color = "black";
     aboutParagraph.style.color = "black";
     input.forEach((inp) => (inp.style.color = "black"));
+    textarea.style.color = "black";
 
     // Change background image
     landingImage.style.backgroundImage = `url(${background})`; // change to the path of the new background image
@@ -38,6 +40,7 @@ function GeneralLayout() {
     const about = document.querySelector(".about");
     const aboutParagraph = document.querySelector(".about__paragraph");
     const input = document.querySelectorAll("input");
+    const textarea = document.querySelector("textarea");
 
     // Changing the styles
     body.style.backgroundColor = "black";
@@ -45,6 +48,7 @@ function GeneralLayout() {
     aboutParagraph.style.color = "white";
     about.style.color = "white";
     input.forEach((inp) => (inp.style.color = "white"));
+    textarea.style.color = "white";
 
     // Change background image
     landingImage.style.backgroundImage = `url(${blackImage})`; // change to the path of the new background image

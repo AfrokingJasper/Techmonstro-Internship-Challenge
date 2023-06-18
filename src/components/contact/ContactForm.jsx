@@ -4,7 +4,7 @@ import "./ContactForm.css";
 // setting functions to validate each of the inputs
 const nameValidation = (fullname) => fullname.split(" ").length > 1;
 const emailValidation = (email) => email.includes("@");
-const messageValidation = (message) => message.split(" ").length >= 5;
+const messageValidation = (message) => message.split(" ").length > 0;
 
 function ContactForm() {
   const [success, setSuccess] = useState(false);
@@ -104,9 +104,7 @@ function ContactForm() {
           ref={messageInputRef}
           required
         ></textarea>
-        {!inputValidity.message && (
-          <p>message should contain at least 5 words</p>
-        )}
+        {!inputValidity.message && <p>please enter a valid message</p>}
       </div>
       {success && (
         <em className="success__message">Message sent successfully</em>
