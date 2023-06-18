@@ -1,4 +1,5 @@
 import "./Contact.css";
+import ContactForm from "./ContactForm";
 
 const contactType = [
   {
@@ -39,17 +40,7 @@ function Contact() {
               </li>
             ))}
           </ul>
-          <form className="contact__form">
-            <input type="text" placeholder="Your Fullname" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea
-              name="message"
-              rows="7"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>

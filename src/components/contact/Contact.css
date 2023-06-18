@@ -46,41 +46,6 @@
   color: white;
 }
 
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  gap: 1rem;
-}
-
-.contact__form input,
-textarea {
-  padding: 1.3rem;
-  width: 100%;
-  background: transparent;
-  border: 1px solid gray;
-  font-size: 1.2rem;
-  border-radius: 1rem;
-  color: white;
-}
-
-.contact__form button {
-  width: 7rem;
-  padding: 0.8rem 0.5rem;
-  border-radius: 0.3rem;
-  border: none;
-  transition: all 0.3s;
-}
-.contact__form button:hover {
-  background-color: gray;
-  color: white;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: white;
-}
-
 @media (max-width: 950px) {
   .contact__content {
     width: 90%;
@@ -106,15 +71,6 @@ textarea::placeholder {
 
   .contact__content-left {
     width: 100%;
-  }
-
-  .contact__form {
-    width: 100%;
-  }
-
-  .contact__form input,
-  textarea {
-    font-size: 1rem;
   }
 }
 /* @media (max-width: 281px) {
