@@ -21,7 +21,7 @@ const galleryItems = [
     title: "Queen",
     img: queen,
     about:
-      "The queen is the most powerful piece in chess. It can move any number of squares in any direction",
+      "The queen is the most powerful piece in chess. It can move any number of squares in any direction.",
     description:
       "The queen is the most powerful piece in chess. It can move any number of squares in any direction: horizontally, vertically, or diagonally. The queen is a versatile and influential piece, capable of attacking and capturing enemy pieces from long distances. It plays a crucial role in offense, defense, and strategic maneuvers on the chessboard. Its strength and mobility make it a valuable asset in the game.",
   },

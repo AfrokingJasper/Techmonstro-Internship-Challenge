@@ -26,6 +26,7 @@ function GalleryItems({ galleryItems, onShowView }) {
                 >
                   <p>{items.title}</p>
                   <p>{items.about}</p>
+                  <p className="see__more">See more...</p>
                 </div>
               </div>
             </li>

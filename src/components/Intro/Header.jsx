@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Header.css";
 import { Fragment, useState } from "react";
 
@@ -9,9 +8,9 @@ function Header() {
     <Fragment>
       <header className="header">
         <div>
-          <Link to="/" className="logo" onClick={() => setIsActive("#")}>
-            Fortune.
-          </Link>
+          <a href="#landing" className="logo" onClick={() => setIsActive("#")}>
+            ChessInfo.
+          </a>
         </div>
         <div className="navs">
           <ul className="nav__list">

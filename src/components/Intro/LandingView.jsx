@@ -2,7 +2,7 @@ import "./LandingView.css";
 
 function LandingView() {
   return (
-    <section className="landing__view">
+    <section id="landing" className="landing__view">
       <div className=" overlay"></div>
       <div className="landing__view-content">
         <h1 className="landing__title">
