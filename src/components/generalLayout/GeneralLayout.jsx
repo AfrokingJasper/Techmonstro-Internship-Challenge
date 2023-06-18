@@ -54,7 +54,7 @@ function GeneralLayout() {
     landingImage.style.backgroundImage = `url(${blackImage})`; // change to the path of the new background image
 
     // adding a few changes to the media queries
-    if (window.matchMedia("(max-width: 600px)").matches) {
+    if (window.matchMedia("(max-width: 950px)").matches) {
       landingImage.style.backgroundSize = "contain";
     }
     if (window.matchMedia("(max-width: 950px)").matches) {

@@ -19,10 +19,18 @@ function LandingView({ onblack, onwhite }) {
           <a href="#gallery">Gallery</a>
         </div>
         <div className="background__change-btn">
-          <button onClick={onblack}>
+          <button
+            aria-label="Change Background"
+            type="button"
+            onClick={onblack}
+          >
             <BsFillMoonFill />
           </button>
-          <button onClick={onwhite}>
+          <button
+            aria-label="Change Background"
+            type="button"
+            onClick={onwhite}
+          >
             <BsFillSunFill />
           </button>
         </div>
