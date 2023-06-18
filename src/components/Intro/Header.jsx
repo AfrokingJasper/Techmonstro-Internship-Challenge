@@ -6,6 +6,7 @@ function Header() {
 
   return (
     <Fragment>
+      {/* header navigation for large screens */}
       <header className="header">
         <div>
           <a href="#landing" className="logo" onClick={() => setIsActive("#")}>

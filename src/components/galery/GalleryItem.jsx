@@ -8,20 +8,21 @@ import "./GalleryItem.css";
 // the ITEM was passed as a prop from the parent container
 // it contains the details of the exact item that was clicked in the GallrtyItems section
 // that item was passed down to the parent container and then transfered to this container as a prop
-function GalleryItem({ onHideView, item }) {
+
+function GalleryItem({ onHideView, item, back }) {
   return (
-    <section className="gallery__item-container">
+    <article className="gallery__item-container">
       <div className="single__image-view">
         <img src={item.image} alt={item.image} />
       </div>
       <div className="about__item">
         <h1>About the {item.title}</h1>
-        <p>{item.description}</p>
+        <span>{item.description}</span>
         <button className="about__item-button" onClick={onHideView}>
           Back
         </button>
       </div>
-    </section>
+    </article>
   );
 }
 

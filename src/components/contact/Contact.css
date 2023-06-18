@@ -1,10 +1,9 @@
+/* styling the contact section */
 .contact__section {
-  display: flex;
-  text-align: center;
-  padding: 0 2rem;
   border-bottom: 50rem;
 }
 
+/* styling the contact content container including  socials */
 .contact__content-container {
   width: 100%;
   margin: 5rem 0;
@@ -36,6 +35,8 @@
   background-color: gray;
   padding: 1rem;
   transition: all 0.3s;
+  align-items: center;
+  justify-content: center;
 }
 .contact__content-left li:hover {
   background-color: black;
@@ -46,6 +47,7 @@
   color: white;
 }
 
+/* setting media queries for tabletrs */
 @media (max-width: 950px) {
   .contact__content {
     width: 90%;
@@ -58,6 +60,8 @@
     width: 45%;
   }
 }
+
+/* setting media queries for mobile screens */
 @media (max-width: 650px) {
   .contact__section {
     padding: 0 1rem;

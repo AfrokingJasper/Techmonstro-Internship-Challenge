@@ -59,7 +59,7 @@ const galleryItems = [
   },
 ];
 
-function Gallery() {
+function Gallery({ back }) {
   const [view, setView] = useState(false);
   const [data, setData] = useState({
     id: "",
@@ -91,7 +91,9 @@ function Gallery() {
       {!view && (
         <GalleryItems onShowView={setViewHandler} galleryItems={galleryItems} />
       )}
-      {view && <GalleryItem item={data} onHideView={hideViewHandler} />}
+      {view && (
+        <GalleryItem back={back} item={data} onHideView={hideViewHandler} />
+      )}
     </Fragment>
   );
 }

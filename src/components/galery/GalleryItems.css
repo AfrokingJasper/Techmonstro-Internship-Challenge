@@ -1,9 +1,4 @@
 /* styling the gallery section */
-.gallery__section {
-  display: flex;
-  text-align: center;
-  padding: 0 2rem;
-}
 
 /* stylng the gallery content including the images and also setting an overlay on each image when it is hovered upon */
 .gallery__content {

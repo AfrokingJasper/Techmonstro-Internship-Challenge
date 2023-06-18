@@ -2,13 +2,13 @@ import { Fragment } from "react";
 import LandingView from "./LandingView";
 import About from "./About";
 
-function Intro() {
+function Intro({onblack, onwhite }) {
   return (
     <Fragment>
-      <LandingView />
+      <LandingView onblack={onblack} onwhite={onwhite} />
       <About />
     </Fragment>
   );
 }
 
-export default Intro
+export default Intro;

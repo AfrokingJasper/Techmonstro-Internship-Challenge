@@ -3,11 +3,11 @@ import chessImg from "../../assets/playing-chess-1.jpg";
 
 function About() {
   return (
-    <div id="about" className="about">
+    <article id="about" className="about">
       <div className="about__container">
         <h1>About Chess</h1>
 
-        {/* about image and content */}
+        {/* about chess image and content */}
         <div className="about__content">
           <img
             className="about__image"
@@ -29,7 +29,7 @@ function About() {
           </p>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 

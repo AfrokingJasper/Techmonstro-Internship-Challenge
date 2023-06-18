@@ -48,6 +48,7 @@ nav {
   display: none;
 }
 
+/* setting media queries for mobile screens */
 @media (max-width: 650px) {
   .header {
     padding: 0 3rem;

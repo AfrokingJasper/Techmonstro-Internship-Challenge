@@ -1,3 +1,5 @@
+/* styling the contact form */
+
 .contact__form {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,7 @@
   gap: 1rem;
 }
 
+/* styling the form inputs and buttons */
 .contact__form input,
 textarea {
   padding: 1.3rem;
@@ -30,7 +33,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: white;
+  /* color: white; */
 }
 
 .error input,
@@ -49,6 +52,7 @@ textarea::placeholder {
   color: green;
 }
 
+/* setting media queries for mobile screens */
 @media (max-width: 650px) {
   .contact__form {
     width: 100%;
