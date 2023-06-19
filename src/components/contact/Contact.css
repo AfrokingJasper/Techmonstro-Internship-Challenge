@@ -54,7 +54,7 @@
 /* setting media queries for tabletrs */
 @media (max-width: 950px) {
   .contact__content {
-    width: 90%;
+    width: 100%;
   }
 
   .contact__content-left {
