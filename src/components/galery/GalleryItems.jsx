@@ -7,13 +7,14 @@ import "./GalleryItems.css";
 // 2)
 // the on showView is a funtion from the parent element (Gallery)
 // its duty is to set the VIEW to true and enable users view a particular image in a single large format  when clicked
-//  it also recieves the gallery item that was clicked and pass it up to the parent container which later passes it down to the GalleryItem
+//  it also recieves the gallery item that was clicked and pass it up to the parent container which later passes it down to the GalleryItem(singular)
 function GalleryItems({ galleryItems, onShowView }) {
   return (
     <section id="gallery" className="gallery__section">
       <div className="gallery__content">
         <h1>Gallery</h1>
         <ul className="gallery__grid">
+          {/* mapping through the gallery items to display them as a list */}
           {galleryItems.map((items) => (
             <li key={items.img}>
               <div className="gallery__image-container">

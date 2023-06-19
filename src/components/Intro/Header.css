@@ -44,7 +44,7 @@
 }
 
 /*hidding mobile navigations on large screens*/
-nav {
+.mobile__navigation {
   display: none;
 }
 
@@ -63,7 +63,7 @@ nav {
   }
 
   /* mobile navigations */
-  nav {
+  .mobile__navigation {
     display: flex;
     justify-content: center;
     position: fixed;

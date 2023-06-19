@@ -9,7 +9,10 @@ function LandingView({ onblack, onwhite }) {
 
   return (
     <section id="landing" className="landing__view">
+      {/* the container below is an overlay which darkens the landing image a bit to make the intro texts more visible */}
       <div className=" overlay"></div>
+
+      {/* main landing contents */}
       <div className="landing__view-content">
         <h1 className="landing__title">
           Checkmate Your Way to Chess Mastery: Unleash Your Strategic Genius!

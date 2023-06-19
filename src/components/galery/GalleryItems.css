@@ -38,7 +38,7 @@
   height: 0%;
 }
 
-/* making the gallery overlay visible on hover of the parent container */
+/* making the gallery overlay visible on hover of the parent container of a particular image */
 .gallery__image-container:hover > .gallery__overlay {
   visibility: visible;
   font-size: 1rem;

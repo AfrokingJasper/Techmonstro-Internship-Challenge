@@ -60,6 +60,8 @@ const galleryItems = [
 ];
 
 function Gallery() {
+  // the view usestate is used to change the content visibility on the gallery section on click
+  // when you click on a particular image, the view is set to true and that image is displayed on a larger format
   const [view, setView] = useState(false);
   const [data, setData] = useState({
     id: "",
@@ -82,7 +84,7 @@ function Gallery() {
     setView(!view);
   };
 
-  // this function also sets the state of VIEW to false and takes the user back to the main gallery
+  // the hideViewHandler function sets the state of VIEW to false and takes the user back to the main gallery
   const hideViewHandler = () => {
     setView(!view);
   };

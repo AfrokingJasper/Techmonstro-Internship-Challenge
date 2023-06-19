@@ -37,6 +37,7 @@ function Contact() {
         <div className="contact__content">
           {/* socials list */}
           <ul className="contact__content-left">
+            {/* mapping through the contactType to display them as a list */}
             {contactType.map((type) => (
               <li key={type.type}>
                 <type.icon />

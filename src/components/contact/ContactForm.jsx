@@ -2,10 +2,13 @@ import { useRef, useState, useEffect } from "react";
 import "./ContactForm.css";
 
 // setting functions to validate each of the inputs
-const nameValidation = (fullname) => fullname.split(" ").length > 1;
+const nameValidation = (fullname) =>
+  fullname.trim() !== "" && fullname.split(" ").length > 1;
 const emailValidation = (email) => email.includes("@");
-const messageValidation = (message) => message.split(" ").length > 0;
+const messageValidation = (message) =>
+  message.trim() !== "" && message.split(" ").length > 0;
 
+// contact component below
 function ContactForm() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -74,6 +77,7 @@ function ContactForm() {
   const emailStyle = !inputValidity.email ? "error" : "";
   const messageStyle = !inputValidity.message ? "error" : "";
 
+  // returning the contcat jsx
   return (
     <form onSubmit={confirmHandler} className="contact__form">
       <div className={nameStyle}>

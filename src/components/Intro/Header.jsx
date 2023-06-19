@@ -17,7 +17,7 @@ function Header() {
         </div>
 
         {/* navigations */}
-        <div className="navs">
+        <nav className="navs">
           <ul className="nav__list">
             <li>
               <a
@@ -47,11 +47,11 @@ function Header() {
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </header>
 
       {/* mobile navigation */}
-      <nav>
+      <nav className="mobile__navigation">
         <ul className="nav__list-mobile">
           <li>
             <a

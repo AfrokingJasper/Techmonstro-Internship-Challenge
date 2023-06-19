@@ -5,9 +5,9 @@ import "./GalleryItem.css";
 //  And its function is to set the VIEW to false and return to the main gallery section
 
 // 2)
-// the "item" was passed as a prop from the parent container
+// "item" was passed as a prop from the parent container
 // it contains the details of the exact item that was clicked in the GalleryItems section
-// that item was passed down to the parent container and then transfered to this container as a prop
+// that "item" was passed up to the parent container from the GalleryItems and then transfered to this container as a prop
 
 function GalleryItem({ onHideView, item }) {
   return (
