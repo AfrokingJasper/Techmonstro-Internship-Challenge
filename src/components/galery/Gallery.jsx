@@ -68,8 +68,8 @@ function Gallery() {
     description: "",
   });
 
-  // the setViewHander function is meant to help change the state of the DATA to the item that was clicked in the GalleryItems
-  // and that DATA can then be passed to the GalleryItem
+  // the setViewHander function is meant to help change the state of the DATA to the item that was clicked in the GalleryItems(plural)
+  // and that DATA can then be passed to the GalleryItem(singular)
   // the state of that DATA changes on every click to the recently clicked item
   // this function also sets the state of VIEW to true and displays the single item that was clicked
   const setViewHandler = (item) => {
@@ -82,7 +82,7 @@ function Gallery() {
     setView(!view);
   };
 
-  // this function also sets the state of VIEW to false and takes the use back to the main gallery
+  // this function also sets the state of VIEW to false and takes the user back to the main gallery
   const hideViewHandler = () => {
     setView(!view);
   };

@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import Intro from "../Intro/Intro";
 import Gallery from "../galery/Gallery";
 import Contact from "../contact/Contact";
-import background from "../../assets/backup-landing.jpg";
+import whiteImage from "../../assets/backup-landing.jpg";
 import blackImage from "../../assets/landing-image.jpg";
 
 function GeneralLayout() {
@@ -28,7 +28,7 @@ function GeneralLayout() {
     textarea.style.color = "black";
 
     // Change background image
-    landingImage.style.backgroundImage = `url(${background})`; // change to the path of the new background image
+    landingImage.style.backgroundImage = `url(${whiteImage})`; // change to the path of the new background image
   }
 
   // the blackBackground function changes the the theme of the webpage from white to black

@@ -31,11 +31,6 @@ textarea {
   color: white;
 }
 
-input::placeholder,
-textarea::placeholder {
-  /* color: white; */
-}
-
 .error input,
 .error textarea {
   color: red;

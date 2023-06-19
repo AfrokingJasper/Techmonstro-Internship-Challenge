@@ -106,12 +106,15 @@ function ContactForm() {
         ></textarea>
         {!inputValidity.message && <p>please enter a valid message</p>}
       </div>
+
+      {/* adding a success or error message when either of them is true */}
       {success && (
         <em className="success__message">Message sent successfully</em>
       )}
       {error && (
         <p>Something went wrong Please fill form correctly and try again</p>
       )}
+
       <button type="submit">Send Message</button>
     </form>
   );

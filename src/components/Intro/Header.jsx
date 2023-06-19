@@ -2,17 +2,21 @@ import "./Header.css";
 import { Fragment, useState } from "react";
 
 function Header() {
+  // the isActive state is used the monitor the navigations and change their active state when either of them is being clicked
   const [isActive, setIsActive] = useState("#");
 
   return (
     <Fragment>
       {/* header navigation for large screens */}
       <header className="header">
+        {/* logo */}
         <div>
           <a href="#landing" className="logo" onClick={() => setIsActive("#")}>
             ChessInfo.
           </a>
         </div>
+
+        {/* navigations */}
         <div className="navs">
           <ul className="nav__list">
             <li>

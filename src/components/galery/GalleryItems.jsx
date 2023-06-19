@@ -6,7 +6,7 @@ import "./GalleryItems.css";
 
 // 2)
 // the on showView is a funtion from the parent element (Gallery)
-// its its funtion is to set the VIEW to true and enable users view a particular image in a single large format  when clicked
+// its duty is to set the VIEW to true and enable users view a particular image in a single large format  when clicked
 //  it also recieves the gallery item that was clicked and pass it up to the parent container which later passes it down to the GalleryItem
 function GalleryItems({ galleryItems, onShowView }) {
   return (
